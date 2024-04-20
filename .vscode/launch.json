@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Basics",
+            "request": "launch",
+            "mainClass": "Basics.Main_Method_Basics",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "GenericsExample",
+            "request": "launch",
+            "mainClass": "Generics.GenericsExample",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Date_Time_Classes",
+            "request": "launch",
+            "mainClass": "Java_API.Date_Time.Main_Method_Date_Time_Classes",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_File_Class",
+            "request": "launch",
+            "mainClass": "Java_API.File.Main_Method_File_Class",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Integer_Classes",
+            "request": "launch",
+            "mainClass": "Java_API.Integer.Main_Method_Integer_Classes",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Math_Classes",
+            "request": "launch",
+            "mainClass": "Java_API.Math.Main_Method_Math_Classes",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Regex_Classes",
+            "request": "launch",
+            "mainClass": "Java_API.Regular_Expressions.Main_Method_Regex_Classes",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Scanner_Class",
+            "request": "launch",
+            "mainClass": "Java_API.Scanner.Main_Method_Scanner_Class",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_String_Classes",
+            "request": "launch",
+            "mainClass": "Java_API.String.Main_Method_String_Classes",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_OOP",
+            "request": "launch",
+            "mainClass": "Objekt_Orientierte_Programmierung.Main_Method_OOP",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Schmierblatt",
+            "request": "launch",
+            "mainClass": "Schmierblatt.Main_Method_Schmierblatt",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Main_Method_Loesungen",
+            "request": "launch",
+            "mainClass": "Uebungen.Loesungen.Main_Method_Loesungen",
+            "projectName": "JavaStudyCode_ab2d915f"
+        }
+    ]
+}

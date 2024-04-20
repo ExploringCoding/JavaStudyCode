@@ -51,6 +51,27 @@ public class ParameterDatenbankSimulation {
         }
     }
 
+    // Methode zum Löschen eines Eintrags aus der "Datenbank" anhand seines Inhalts
+    public void datensatzLoeschenNachInhalt(String zuLoeschenderDatensatz) {
+        int index = -1; // Initialisiere den Index als ungültig <= um sicherzustellen, dass, wenn der zu löschende Datensatz nicht gefunden wird, der Index unverändert bleibt und keine gültige Position in der Datenbank darstellt
+
+        // Durchsuche die Datenbank nach dem zu löschenden Datensatz
+        for (int i = 0; i < datenbank.size(); i++) {
+            if (datenbank.get(i).equals(zuLoeschenderDatensatz)) {
+                index = i; // Setze den Index auf die Position des gefundenen Datensatzes
+                break; // Beende die Schleife, sobald der Datensatz gefunden wurde
+            }
+        }
+
+        // Überprüfe, ob der Datensatz gefunden wurde
+        if (index != -1) {
+            System.out.println("Lösche Datensatz '" + zuLoeschenderDatensatz + "' an Index " + index);
+            datenbank.remove(index); // Lösche den Datensatz an der gefundenen Position
+        } else {
+            System.out.println("Datensatz '" + zuLoeschenderDatensatz + "' nicht gefunden.");
+        }
+    }
+
     // Methode zum Ausführen einer Beispielsequenz von Operationen
     public void datenbankOperationenAusfuehren() {
         datensatzHinzufuegen("Datensatz 1");

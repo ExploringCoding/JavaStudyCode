@@ -43,6 +43,27 @@ public class Methoden {
         System.out.println(output);
         return new Object[] {text, zahl};
 
+
+        /* // Anwendung kann auf unten stehendem weg erfolgen.
+         * 
+         *  public static void main(String[] args) {
+            
+            Object[] zusammengefasst = methode(60, 99);
+            methode2((int)zusammengefasst[0], (int)zusammengefasst[1]);
+
+            }
+
+            public static Object[] methode(int a , int b){
+
+                return new Object[] { a , b};
+            }
+
+            private static void methode2(int resultA , int resultB){
+
+                System.out.println(resultA);
+                System.out.println(resultB);
+            }
+        */
     }
 
 }

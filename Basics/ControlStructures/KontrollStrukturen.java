@@ -64,6 +64,7 @@ public class KontrollStrukturen {
     }
 
     // for-each schleife (für arrays und collections)
+    // ABER: kann keine Indexierung einzelner Elemente vornehmen. d.h. eintrag + index nicht möglich.
     public static void forEachSchleife(){
 
         int[] zahlenArray = {1, 2, 3, 4, 5};
