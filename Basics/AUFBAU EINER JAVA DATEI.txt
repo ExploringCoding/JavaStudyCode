@@ -1,0 +1,49 @@
+// Paketdeklaration - optional, gibt an, zu welchem Paket diese Klasse gehört
+package com.example;
+
+// Import-Anweisungen - ermöglichen den Zugriff auf Klassen aus anderen Paketen
+import java.util.ArrayList;
+import java.util.List;
+
+// Klassendefinition - Grundbaustein für OOP in Java
+public class AufbauEinerJavaDatei {
+
+    // Klassenvariablen oder -attribute - Daten, die von den Instanzen dieser Klasse gemeinsam genutzt werden
+    private int zahl;
+    private String text;
+
+    // Konstruktor - Initialisiert eine neue Instanz der Klasse
+    public AufbauEinerJavaDatei(int zahl, String text) {
+        this.zahl = zahl;
+        this.text = text;
+    }
+
+    // Methoden - Verhalten oder Aktionen, die von den Instanzen dieser Klasse ausgeführt werden können
+    public void methodeA() {
+        System.out.println("Methode A wurde aufgerufen");
+    }
+
+    // Beispiel einer statischen Methode - kann ohne Instanziierung der Klasse aufgerufen werden
+    public static void statischeMethode() {
+        System.out.println("Dies ist eine statische Methode");
+    }
+
+    // Hauptmethode (main) - Einstiegspunkt für die Ausführung des Programms
+    public static void main(String[] args) {
+        // Instanziierung einer neuen AufbauEinerJavaDatei-Objekts
+        AufbauEinerJavaDatei obj = new AufbauEinerJavaDatei(42, "Hallo Welt");
+
+        // Aufruf von Methoden und Zugriff auf Klassenvariablen
+        obj.methodeA();
+        System.out.println("Zahl: " + obj.zahl + ", Text: " + obj.text);
+
+        // Aufruf einer statischen Methode
+        statischeMethode();
+
+        // Beispiel für die Verwendung von Listen (Collections)
+        List<String> liste = new ArrayList<>();
+        liste.add("Element 1");
+        liste.add("Element 2");
+        System.out.println("Liste: " + liste);
+    }
+}
