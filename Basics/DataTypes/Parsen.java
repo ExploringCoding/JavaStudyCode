@@ -2,6 +2,9 @@ package Basics.DataTypes;
 
 public class Parsen {
     
+    // REGEL:
+    // von einer "Zahl oder Wahrheitswert" Integer/Double/etc.toString();
+    // vom String in Zahl oder Wahrheitswert Integer/Double/etc.parseXX()
 
     public static void stringToInt(){
         String str = "42";

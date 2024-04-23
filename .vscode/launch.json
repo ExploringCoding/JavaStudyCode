@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UebungEins",
+            "request": "launch",
+            "mainClass": "Uebungen.Loesungen.Programmierung_Vorlesung.UebungEins",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

@@ -11,13 +11,19 @@ public class Loesungen_Kontroll_Strukturen {
     public static void loesungA(){
 
         int zahl = 6;
-        zahl %= 2;
-
+        
+        /* => DIESER LÖSUNGSWEG IST EBENFALLS KORREKT
+        //zahl %= 2;
         if (zahl == 0){
             System.out.println("die zahl ist gerade");
         } else {
             System.out.println("die zahl ist ungerade");
         }
+        */
+
+        // ELEGANTERER WEG
+        String ergebnis = (zahl % 2 == 0) ? "gerade" : "ungerade";
+        System.out.println(ergebnis);
     }
 
     // zu B)

@@ -13,6 +13,9 @@ package Basics;
 //import Basics.Methods.ParameteruebergabeBeiMethoden;
 //import Basics.Constructors.KonstruktorenErklaerung;
 
+import Basics.DataTypes.Casting;
+import Basics.Ternaere_Operatoren.Ternaere_Operatoren;
+
 public class Main_Method_Basics {
 
     public static void main(String[] args) {
@@ -38,6 +41,13 @@ public class Main_Method_Basics {
         KomplexeDatenTypen.hashSet();
         KomplexeDatenTypen.queue();
         KomplexeDatenTypen.stack();
+        */
+
+        // BASICS => DATA TYPES => Casting.java -----------------------------------------
+        /*
+        Casting.doubleToInt(3.12);
+        Casting.intToShort(3);
+        Casting.objectToString(args);
         */
 
         // BASICS => Variables => PrimitiveVariable.java -----------------------------------------
@@ -100,5 +110,14 @@ public class Main_Method_Basics {
         KonstruktorenErklaerung obj4 = new KonstruktorenErklaerung(obj3); // Aufruf des Kopierkonstruktors
         */
 
-    }   
+        //BASICS => Ternaere_Operatoren => Ternaere_Operatoren.java
+        /*
+        Ternaere_Operatoren.max(1, 9);
+        Ternaere_Operatoren.geradeUngerade(3);
+        Ternaere_Operatoren.formatResults(false);
+        Ternaere_Operatoren.getGreeting(false);
+        Ternaere_Operatoren.checkEmpty("sa");
+        Ternaere_Operatoren.checkSign(3);
+        */
+    }       
 }
