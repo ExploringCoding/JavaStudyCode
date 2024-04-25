@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main_Method_JDBC",
+            "request": "launch",
+            "mainClass": "JDBC_MySQL.Main_Method_JDBC",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "mysql_test",
+            "request": "launch",
+            "mainClass": "Schmierblatt.mysql_test",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Loesungen_Operatoren",
+            "request": "launch",
+            "mainClass": "Uebungen.Loesungen.Loesungen_Operatoren",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "Blatt",
+            "request": "launch",
+            "mainClass": "Schmierblatt.Blatt",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
+            "name": "UebungZwei",
+            "request": "launch",
+            "mainClass": "Uebungen.Loesungen.Programmierung_Vorlesung.UebungZwei",
+            "projectName": "JavaStudyCode_ab2d915f"
+        },
+        {
+            "type": "java",
             "name": "UebungEins",
             "request": "launch",
             "mainClass": "Uebungen.Loesungen.Programmierung_Vorlesung.UebungEins",

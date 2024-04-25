@@ -4,8 +4,28 @@ public class UebungEins {
     
     public static void main(String[] args) {
         
-        zweiB();
+        //zweiB();
         zweiDEF();
+
+        //whileTrue();
+        //floeatTest();
+
+        int a = 5;
+        byte b1 = 122;
+
+        b1 = (byte) (a+b1);
+        System.out.println(b1);
+
+        int i = 3;
+        float f = ((float) i) / 2; // Ganzzahl-Arithmetik
+        System.out.println(f);
+    }
+
+    public static void whileTrue(){
+
+        while (true){
+            System.out.println("Hello");
+        }
     }
 
     // zu 2b)
@@ -32,6 +52,26 @@ public class UebungEins {
         System.out.println("vii. b % a: " + result_vii);
     }
     
+    // zu 2c
+    public static void floeatTest(){
+
+        float a = 2.5f;
+        float b = 5.0f;
+
+        int b_aus_Drei = 5;
+
+        float result = b / a;
+        System.out.println(result);
+
+        result = b % a;
+        System.out.println(result);
+
+        result = b / 2;
+        System.out.println(result);
+
+        result = b_aus_Drei / 2;
+        System.out.println(result);
+    }
 
     // zu Übung 2d
     public static void zweiDEF(){
@@ -41,16 +81,19 @@ public class UebungEins {
 
         System.out.println("Vor dem Tausch: a= " + a + ", b= " + b);
         
-        boolean i = (a == Math.pow(2,1));
+
+        boolean i = (a == 2);
         boolean ii = (a == 3);
         boolean iii = (a != 3);
         boolean iv = (a == 3) == false;
         boolean v = (a == 2) || (b == 4);
         boolean vi = (a == 2) && (b == 4);
         boolean vii = (a == 2) && !(b == 4);
-        boolean viii = a < 2 && b == 4 || b == 5;
+        boolean viii = a < 2 && b == 4 || b == 5; // && wird zuerst ausgeführt
+        boolean viii_02 = b == 5 || (a < 2 && b == 4) ;
         boolean ix = a < 2 && (b == 4 || b == 5);
 
+        
         System.out.println("i: " + i);
         System.out.println("ii: " + ii);
         System.out.println("iii: " + iii);
@@ -59,6 +102,7 @@ public class UebungEins {
         System.out.println("vi: " + vi);
         System.out.println("vii: " + vii);
         System.out.println("viii: " + viii);
+        System.out.println("viii_02" + viii_02);
         System.out.println("ix: " + ix);
 
         // variablenwerte tauschen
@@ -68,7 +112,7 @@ public class UebungEins {
 
         System.out.println("Nach dem Tausch: a= " + a + ", b= " + b);
 
-        boolean qi = (a == Math.pow(2, 1));
+        boolean qi = (a == 2);
         boolean qii = (a == 3);
         boolean qiii = (a != 3);
         boolean qiv = (a == 3) == false;
@@ -91,6 +135,11 @@ public class UebungEins {
         // neue Variable zero: Ergebnis von a-a
         int zero = a - a;
         System.out.println("zero: " + zero);
+
+        if (zero == 0){
+            throw new IllegalArgumentException("Zero == 0");
+        }
+
 
         // neue Variable divByZero: Ergebnis von a / zero
         int divByZero = a / zero;

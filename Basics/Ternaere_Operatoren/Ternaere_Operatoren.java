@@ -2,6 +2,8 @@ package Basics.Ternaere_Operatoren;
 
 public class Ternaere_Operatoren {
     
+    // <Datentyp> name = (<boolsche Bedingung>) ? <Wert || Methode> : <Wert || Methode>
+
     // maximales von zwei zahlen finden
     public static int max(int a, int b){
         return (a > b) ? a : b;
@@ -32,5 +34,18 @@ public class Ternaere_Operatoren {
         return (number > 0) ? "Positive" : (number < 0) ? "Negative " : "Null";
     }
 
+    public static void uebung(){
+
+        int i1 = 5;
+        int i2 = 10;
+
+        //boolean bool = (i1 == i2) ? true : false;
+        boolean bool = (i1 == i2);
+
+        String s = (bool) ? "Pass" : "Passt nicht";
+
+
+        System.out.println(s);
+    }
 
 }

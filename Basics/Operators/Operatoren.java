@@ -84,7 +84,7 @@ public class Operatoren {
         System.out.println("Nachinkrement: " + ++zahl);
     }
 
-    // Bedingte Operatoren (Ternary Operator): ?:
+    // Bedingte Operatoren (Ternary Operator): ?: => siehe auch BASICS => TERNAERE_OPERATOREN => *.java 
     public static void bedingteOp(){
         int a = 10, b = 20;
         int max = (a > b) ? a : b;

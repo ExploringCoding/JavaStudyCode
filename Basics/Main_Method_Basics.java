@@ -13,8 +13,10 @@ package Basics;
 //import Basics.Methods.ParameteruebergabeBeiMethoden;
 //import Basics.Constructors.KonstruktorenErklaerung;
 
-import Basics.DataTypes.Casting;
 import Basics.Ternaere_Operatoren.Ternaere_Operatoren;
+
+//import Basics.DataTypes.Casting;
+//import Basics.Ternaere_Operatoren.Ternaere_Operatoren;
 
 public class Main_Method_Basics {
 
@@ -119,5 +121,6 @@ public class Main_Method_Basics {
         Ternaere_Operatoren.checkEmpty("sa");
         Ternaere_Operatoren.checkSign(3);
         */
+        Ternaere_Operatoren.uebung();
     }       
 }
