@@ -12,7 +12,7 @@ public class Main_Method_JDBC {
         
         // verbindungsherstellung
         InitDB.connectionToDB();
-
+        
         controlFlow();
         
         // Verbindung am Ende schließen
@@ -85,7 +85,9 @@ public class Main_Method_JDBC {
             
             } else if (input.startsWith("c")) {
                 addCard();
-            } 
+            } else if (input.startsWith("xx")) {
+                DataAccessLayer.exportCardsToMarkdown(InitDB.getConnection());
+            }
             
             else {
                 System.out.println("Dieser Befehl ist nicht bekannt.");
