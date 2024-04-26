@@ -55,7 +55,7 @@ public class InitDB {
         try (Statement statement = connection.createStatement()) {
             
             statement.execute(sql);
-            System.out.println("USE wurde erfolgreich angewendet");
+            //System.out.println("USE wurde erfolgreich angewendet");
         } catch (SQLException e) {
             System.err.println("Fehler bei der Verwendung von USE: " + e.getMessage());
         }
@@ -69,7 +69,7 @@ public class InitDB {
 
         try (Statement statement = connection.createStatement()) {
             statement.executeUpdate(sql);
-            System.out.println("Table: user_table wurde erfolgreich erstellt");
+            //System.out.println("Table: user_table wurde erfolgreich erstellt");
         } catch (SQLException e) {
             System.err.println("Fehler bei der Erstellung des Table user_table " + e.getMessage());
         }
@@ -84,7 +84,7 @@ public class InitDB {
         try (Statement statement = connection.createStatement()) {
             
             statement.executeUpdate(sql);
-            System.out.println("card_deck table wurde erstellt.");
+            //System.out.println("card_deck table wurde erstellt.");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -103,7 +103,7 @@ public class InitDB {
         try (Statement statement = connection.createStatement()) {
             
             statement.executeUpdate(sql);
-            System.out.println("cards table hinzugefügt");
+            //System.out.println("cards table hinzugefügt");
 
         } catch (SQLException e) {
             System.err.println("Fehler beim hinzufügen der Lernkarte. " + e.getMessage());

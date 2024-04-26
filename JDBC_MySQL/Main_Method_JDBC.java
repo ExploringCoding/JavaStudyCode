@@ -13,12 +13,23 @@ public class Main_Method_JDBC {
         // verbindungsherstellung
         InitDB.connectionToDB();
         
-        controlFlow();
+        welcomeStart();
         
         // Verbindung am Ende schließen
         InitDB.closeConnection();
     }
-    // TODO: controlFlow von dem Welcome (also Anki-Clone msg etc) trennen. controlFlow muss von anderen methoden auch während dem betrieb aufgerufen werden können.
+    
+    private static void welcomeStart(){
+
+        System.out.println("\nSPACED-CMD-REPETITION: Lernkarten-Applikation\n");
+        System.out.println("Deine Karten-Stapel\n");
+        showCardDecks();
+
+        // weiterleitung zu controlFlow()
+        controlFlow();
+
+    }
+
     private static void controlFlow(){
 
         Scanner scanner = new Scanner(System.in);
@@ -26,11 +37,14 @@ public class Main_Method_JDBC {
         // boolean zur exit steuerung
         boolean wantsExit = false;
 
-        boolean isWelcome = true;
+        //boolean isWelcome = true;
 
         // basic control flow 
         while (!wantsExit){
 
+            System.out.println("\nBefehle:\nKarten-Stapel hinzufuegen (n), Alle Karten-Stapel anzeigen (a), Karten-Stapel löschen (del), Update Deck-Name (u), Neue Karte hinzufügen (c), Beenden (e)");
+
+            /*
             if (isWelcome) {
 
                 System.out.println("\nAnki-Clone: Applikation für Lernkarten\n");
@@ -43,6 +57,7 @@ public class Main_Method_JDBC {
                 System.out.println("\n-----------------------------------------------------------------------------");
                 System.out.println("\nBefehle: Neues Lernkarten-Stapel (n), Alle Decks anzeigen (a), Löschen (del), \nUpdate Deck-Name (u), Neue Karte hinzufügen (c), Markdown-Export (md), \nBeenden (e)");
             }
+            */
             
             String input = scanner.nextLine().toLowerCase();
             input.toString(); // <= falls eine Zahl eingegeben worden ist, direkt zu einem String umwandeln
