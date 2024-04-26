@@ -143,7 +143,7 @@ public class DataAccessLayer {
 
         // Pfad für den Download-Ordner
         String downloadFolderPath = System.getProperty("user.home") + "/Downloads";
-        // "C:\Users\nenni\Downloads"
+        
         
         // Dateipfad für die CSV-Datei
         String filePath = downloadFolderPath + "/cards.md";

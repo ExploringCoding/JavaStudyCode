@@ -41,7 +41,7 @@ public class Main_Method_JDBC {
                 isWelcome = false;
             } else {
                 System.out.println("\n-----------------------------------------------------------------------------");
-                System.out.println("\nBefehle: Neues Lernkarten-Stapel (n), Alle Decks anzeigen (a), Löschen (del), Update Deck-Name (u), Neue Karte hinzufügen (c), Beenden (e)");
+                System.out.println("\nBefehle: Neues Lernkarten-Stapel (n), Alle Decks anzeigen (a), Löschen (del), \nUpdate Deck-Name (u), Neue Karte hinzufügen (c), Markdown-Export (md), \nBeenden (e)");
             }
             
             String input = scanner.nextLine().toLowerCase();
@@ -85,7 +85,7 @@ public class Main_Method_JDBC {
             
             } else if (input.startsWith("c")) {
                 addCard();
-            } else if (input.startsWith("xx")) {
+            } else if (input.startsWith("md")) {
                 DataAccessLayer.exportCardsToMarkdown(InitDB.getConnection());
             }
             

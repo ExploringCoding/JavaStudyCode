@@ -17,7 +17,7 @@ public class InitDB {
 
         // Verbindungsparameter
         // DO - NOCH IN .ENV DATEI EINFÜGEN
-        String url = "jdbc:mysql://localhost:3306/java_db";
+        String url = "jdbc:mysql://localhost:3306/java_db?useUnicode=true&characterEncoding=UTF-8";
         String user = "root";
         String password = "sqlpasswort";
 
