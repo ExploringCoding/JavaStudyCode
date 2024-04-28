@@ -26,7 +26,7 @@ public class InitDB {
         try {
             connection = DriverManager.getConnection(url, user, password);
             
-            System.out.println("Verbindung zum MySQL-Server erfolgreich hergestellt.");
+            //System.out.println("Verbindung zum MySQL-Server erfolgreich hergestellt.");
             
             try {
                 Statement statement = connection.createStatement();

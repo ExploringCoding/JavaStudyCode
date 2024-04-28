@@ -6,13 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Clear_Console",
-            "request": "launch",
-            "mainClass": "Java_API.System.Clear_Console",
-            "projectName": "JavaStudyCode_ab2d915f"
-        },
-        {
-            "type": "java",
             "name": "Main_Method_JDBC",
             "request": "launch",
             "mainClass": "JDBC_MySQL.Main_Method_JDBC",

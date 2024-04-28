@@ -1,0 +1,3 @@
+In dieser Methode wird BufferedReader verwendet, um die Zeilen nacheinander aus der Datei zu lesen. 
+Die readLine()-Methode liest eine Zeile aus der Datei und gibt sie zurück. 
+Wenn keine weiteren Zeilen vorhanden sind, gibt sie null zurück, was die Schleife beendet.
